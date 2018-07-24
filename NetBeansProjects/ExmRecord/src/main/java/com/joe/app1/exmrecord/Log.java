@@ -84,7 +84,7 @@ public class Log extends HttpServlet {
             
             String sql = "select * from user where name=? and pass=?";
             Class.forName("com.mysql.jdbc.Driver");
-            Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/Record", "root", "joe2018");
+            Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/Record", "root", "******");
             PreparedStatement ps = conn.prepareStatement(sql);
             ps.setString(1, name);
             ps.setString(2, pass);
