@@ -59,7 +59,7 @@ public class Registration extends HttpServlet {
             
             String sql = "insert into user (name, pass, email) values(?, ?, ?)";
             Class.forName("com.mysql.jdbc.Driver");
-            Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/Record", "root", "joe2018");
+            Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/Record", "root", "*****");
             PreparedStatement ps = conn.prepareStatement(sql);
             ps.setString(1, name);
             ps.setString(2, pass);
